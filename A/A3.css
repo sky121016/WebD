@@ -1,45 +1,35 @@
 *{
-    margin:0;
-    padding:0;
-
+    margin: 0;
+    padding: 0;
 }
 
-#wrap{
+.container{
     width: 1200px;
-    margin: 0 auto;     /* 가운데 정렬 */
+    margin:0 auto;
 }
 
-/* header */
 #header{
     width: 100%;
     display: flex;
-
-    /* height: 100px;    logo와 nav가 height 100이므로 안 써도 됨 */
 }
 
 #header .logo{
     width: 20%;
     height: 100px;
-    background-color: #efefef;
+    background-color: #ccc;
 }
 
 #header .nav{
     width: 80%;
     height: 100px;
-    background-color: #e3e3e3;
+    background-color: #dfdfdf;
 }
 
-
-/* slider */
 #slider{
     width: 100%;
     height: 300px;
-    background-color: #9c9c9c;
 }
 
-
-
-/* contents */
 #contents{
     width: 100%;
     display: flex;
@@ -48,26 +38,22 @@
 #contents .content1{
     width: 33.3333%;
     height: 200px;
-    background-color: #c1c1c1;
+    background-color: #dfdfdf;
 }
 
 #contents .content2{
     width: 33.3333%;
     height: 200px;
-    background-color: #b3b3b3;
+    background-color: #c6c6c6;
 }
 
 #contents .content3{
     width: 33.3333%;
     height: 200px;
-    background-color: #a5a5a5;
+    background-color: #b3b3b3;
 }
 
 
-
-
-
-/* footer */
 #footer{
     width: 100%;
     display: flex;
@@ -76,17 +62,23 @@
 #footer .footer1{
     width: 20%;
     height: 100px;
-    background-color: #3e3e3e;
+    background-color: #ccc;
 }
 
 #footer .footer2{
-    width: 60%;
-    height: 100px;
-    background-color: #7e7e7e;
+    width: 80%;
+    /* height: 100px; */
 }
 
-#footer .footer3{
-    width: 20%;
-    height: 100px;
-    background-color: #c7c7c7;
+#footer .footer2 .footer2-1{
+    width:100%;
+    height: 50px;
+    background-color: #c4c4c4;  
 }
+
+#footer .footer2 .footer2-2{
+    width:100%;
+    height: 50px;
+    background-color: #7c7c7c;  
+}
+
