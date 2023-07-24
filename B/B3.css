@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#header{
+    width: 100%;
+    background-color: #eeeeee;
+}
+
+#header .header_container{
+    width: 1200px;
+    background-color: #cacaca;
+    margin:0 auto;
+    display: flex;
+}
+
+#header .header_container .logo{
+    width: 20%;
+    height: 100px;
+    background-color: #a3a3a3;
+}
+
+#header .header_container .nav{
+    width: 80%;
+    height: 100px;
+    background-color: #929292;
+}
+
+#slider{
+    width: 1200px;
+    height: 300px;
+    margin:0 auto;
+    background-color: #e3e3e3;
+}
+
+#contents{
+    width: 1200px;
+    height: 200px;
+    margin:0 auto;
+    display: flex;
+}
+
+#contents .content1{
+    width: 33.3333%;
+    height: 200px;
+    background-color: #b9b9b9;
+}
+
+#contents .content2{
+    width: 33.3333%;
+    height: 200px;
+    background-color: #aaaaaa;
+}
+
+#contents .content3{
+    width: 33.3333%;
+    height: 200px;
+    background-color: #b9b9b9;
+}
+
+#footer{
+    width: 100%;
+    background-color: #e3e3e3;
+}
+
+#footer .footer_container{
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+}
+
+#footer .footer_container .footer1{
+    width: 20%;
+    height: 100px;
+    background-color: #ccc;
+}
+
+#footer .footer_container .footer2{
+    width: 60%;
+    height: 100px;
+    background-color: #a1a1a1;
+}
+
+#footer .footer_container .footer3{
+    width: 20%;
+    height: 100px;
+    background-color: #ccc;
+}
