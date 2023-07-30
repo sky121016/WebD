@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+.container{
+    width:1200px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+#header{
+    width:100%;
+    display: flex;
+}
+
+#header .logo{
+    width: 20%;
+    height: 100px;
+    background-color: #727272;
+}
+
+#header .nav{
+    width: 80%;
+    height: 100px;
+    background-color: #a6a6a6;
+}
+
+/* .nav {
+} */
+
+.nav > ul {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+}
+
+.nav > ul > li {
+    position: relative;
+}
+
+.nav > ul > li > a{
+    display: inline-block;
+    padding:10px 50px;
+    background-color: #ccc;
+}
+
+.nav > ul > li > a:hover{
+    background-color: #ffd5d5;
+}
+
+.nav > ul > li > ul{
+    display: none;
+    position: absolute;
+    left:0;
+    top:38px;
+    background-color: #747474;
+    width: 100%;
+    text-align: center;
+}
+
+/* .nav > ul > li > ul > li {
+    
+} */
+
+.nav > ul > li > ul > li > a {
+    display: inline-block;
+    padding:10px;
+    background-color: #eee;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav > ul > li > ul > li > a:hover{
+    background-color: #ffd7d7;
+}
+
+
+/* js */
+.nav > ul > li > ul{
+    display: block;
+    height: 0px;
+    /* height: 155px; */
+    overflow: hidden;
+    transition : all 600ms;
+}
+
+
+
+
+
+/* slider */
+
+#slider{
+    width:100%;
+    height: 300px;
+    background-color: #eee;
+}
+
+
+
+/* contents */
+#contents{
+    width:100%;
+    display: flex;
+}
+
+#contents .content1{
+    width:33.3333%;
+    height: 200px;
+    background-color: #cccccc;
+}
+
+#contents .content2{
+    width:33.3333%;
+    height: 200px;
+    background-color: #c1c1c1;
+}
+
+#contents .content3{
+    width:33.3333%;
+    height: 200px;
+    background-color: #acacac;
+}
+
+
+
+/* footer */
+#footer{
+    width:100%;
+    display: flex;
+}
+
+#footer .footer1{
+    width:20%;
+    height: 100px;
+    background-color: #e5e5e5;
+}
+
+#footer .footer2{
+    width:60%;
+    height: 100px;
+    background-color: #cfcfcf;
+}
+
+#footer .footer3{
+    width:20%;
+    height: 100px;
+    background-color: #b5b5b5;
+}
