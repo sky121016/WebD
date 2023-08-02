@@ -34,11 +34,11 @@
     width: 100%;
     height: 300px;
     background-color: #9c9c9c;
+    overflow: hidden;
 }
 
 .sliderWrap{
     display: flex;
-    transition:all 600ms;
 }
 .sliderWrap .slider{
     position: relative;
