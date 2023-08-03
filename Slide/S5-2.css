@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#container{
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: #ccc;
+    display: flex;
+}
+
+
+
+
+/* header */
+#header{
+    width: 200px;
+    height: 100%;
+}
+
+#header .logo{
+    width: 100%;
+    height: 10%;
+    background-color: #eee;
+}
+
+#header .nav{
+    width: 100%;
+    height: 90%;
+    background-color: #cfcfcf;
+}
+
+
+
+/* contents */
+#contents{
+    width: 400px;
+    height: 100%;
+}
+
+#contents .banner{
+    width: 100%;
+    height: 15%;
+    background-color: #d3d3d3;
+}
+
+#contents .notice{
+    width: 100%;
+    height: 35%;
+    background-color: #b5b5b5;
+}
+
+#contents .gallery{
+    width: 100%;
+    height: 35%;
+    background-color: #8b8b8b;
+}
+
+#contents .link{
+    width: 100%;
+    height: 15%;
+    background-color: #565656;
+}
+
+
+
+/* slider */
+#slider{
+    width: calc(100% - 600px);
+    height: 100%;
+    background-color: #b6b6b6;
+    overflow: hidden;
+}
+
+.sliderWrap{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+.sliderWrap .slider{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background-image: url(../image/slider04.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sliderWrap .slider img{
+    vertical-align: top;
+}
+.sliderWrap .slider span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: #fff;
+    padding: 10px 20px;
+    background-color: rgba(0,0,0,0.4);
+
+}
+.sliderWrap .slider.s1{
+    background-image: url(../image/slider04.jpg);
+}
+.sliderWrap .slider.s2{
+    background-image: url(../image/slider05.jpg);
+}
+.sliderWrap .slider.s3{
+    background-image: url(../image/slider06.jpg);
+}
+
+
+
+/* footer */
+#footer{
+    width: 100%;
+    display: flex;
+}
+
+#footer .footer1{
+    width: 20%;
+    height: 120px;
+    background-color: #ddd;
+}
+
+#footer .footer2{
+    width: 80%;
+}
+
+#footer .footer2 .footer2-1{
+    width: 100%;
+    height: 60px;
+    background-color: #d1d1d1;
+}
+
+#footer .footer2 .footer2-2{
+    width: 100%;
+    height: 60px;
+    background-color: #c2c2c2;
+}
+
