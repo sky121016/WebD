@@ -35,6 +35,7 @@ li{
     width: 200px;
     height: 650px;
     background-color: #E6E1FA;
+    z-index: 1000;
 }
 
 #header .logo{
@@ -52,6 +53,7 @@ li{
 #header .nav{
     width: 100%;
     height: 550px;
+
 }
 
 .nav > ul{}
@@ -70,15 +72,17 @@ li{
     background-color: #9E87FB;
 }
 .nav > ul > li > ul{
-    display: none;
+    /* display: none; */
     position: absolute;
     right:-200px;
     top:0;
-    width: 200px;
 
+    width: 200px;
+    height: 0;
+    overflow: hidden;
     transition: all 0.6s;
 }
-.nav > ul > li > ul > li{}
+
 .nav > ul > li > ul > li > a{
     display: block;
     padding:10px;
@@ -95,6 +99,7 @@ li{
 #main{
     width: 800px;
     height: 650px;
+    position: relative;
 }
 
 
@@ -103,10 +108,13 @@ li{
     width: 100%;
     height: 350px;
     background-color: #eee;
+
+    overflow: hidden;
 }
 
 #main #slider .sliderWrap{
     display: flex;
+
 }
 #main #slider .sliderWrap .slider{
     position: relative;
@@ -141,26 +149,95 @@ li{
 /* contents */
 #main #contents{
     width: 100%;
-    background-color: #a9a9a9;
     display: flex;
 }
 
 #main #contents .notice{
     width: 33.3333%;
     height: 200px;
-    background-color: #d3d3d3;
+
+    padding:5px;
+    box-sizing: border-box;
+}
+#main #contents .notice .notice-wrap{
+    padding:10px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+#main #contents .notice .notice-wrap h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#main #contents .notice .notice-wrap ul > li{
+    display: flex;
+}
+#main #contents .notice .notice-wrap ul > li > a{
+    width: 75%;
+    line-height: 1.8;
+}
+#main #contents .notice .notice-wrap ul > li > a:hover{
+    text-decoration: underline;
+}
+#main #contents .notice .notice-wrap ul > li > span{
+    width: 25%;
+    text-align: right;
+    line-height: 1.8;
 }
 
 #main #contents .gallery{
     width: 33.3333%;
     height: 200px;
-    background-color: #939393;
+    padding:5px;
+    box-sizing: border-box;
 }
+#main #contents .gallery .gallery-wrap{
+    padding:10px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #333;
+    box-sizing: border-box;
+}
+#main #contents .gallery .gallery-wrap h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#main #contents .gallery .gallery-wrap ul{
+    display: flex;
+    justify-content: space-between;
+}
+#main #contents .gallery .gallery-wrap ul img{
+    border:1px solid #9E87FB;
+}
+#main #contents .gallery .gallery-wrap ul img:hover{
+    opacity: 0.7;
+}
+
 
 #main #contents .link{
     width: 33.3333%;
     height: 200px;
     background-color: #676767;
+    background-image: url(../images/C4/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#main #contents .link .text{
+    padding:20px;
+    background-color: rgba(0,0,0,0.5);
+    text-align: center;
+    margin-top: 112px;
+}
+#main #contents .link .text h3{
+    color:#C8BAFF;
+    line-height: 1.6;
+}
+#main #contents .link .text a{
+    color:#fff;
 }
 
 
@@ -168,24 +245,75 @@ li{
 /* footer */
 #main #footer{
     width: 100%;
-    background-color: #cfcfcf;
     display: flex;
+    background-color: #E6E1FA;
+    
 }
 
 #main #footer .footer1{
     width: 200px;
     height: 100px;
-    background-color: #e7e7e7;
+}
+#main #footer .footer1 h1{
+    color:#676767;
+    font-size: 32px;
+    text-align: center;
+    padding:10px;
 }
 
 #main #footer .footer2{
     width: 400px;
     height: 100px;
-    background-color: #bdbdbd;
+    color:#333;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
 }
 
 #main #footer .footer3{
     width: 200px;
     height: 100px;
-    background-color: #acacac;
+}
+
+#main #footer .footer3 select{
+    width: 100%;
+    height: 30px;
+    margin-top: 30px;
+}
+
+
+
+.popup-view{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #fff;
+    padding:20px;
+    border-radius: 10px;
+    border: 4px solid #C8BAFF;
+
+    display: none;
+}
+.popup-view h2{
+    color:#333;
+    border-bottom: 2px solid #9E87FB;
+    margin-bottom:10px;
+    line-height: 1.6;
+}
+.popup-view p{
+    color:#333;
+}
+.popup-view a{
+    color:#333;
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    background-color: #C8BAFF;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
