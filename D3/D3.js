@@ -57,22 +57,14 @@ window.onload = function(){
 
     // nav
     let navList = document.querySelectorAll(".nav > ul > li");
-    let subMenu = document.querySelectorAll(".subMenu");
-    let header = document.querySelector("#header");
 
     navList.forEach(nav => {
         nav.addEventListener("mouseover", function(){
-            subMenu.forEach(sub => {
-                sub.style.display = "block";
-            });
-            header.classList.add("on");
+            this.querySelector(".subMenu").style.height = "158px";
             this.querySelector("a").classList.add("on");
         });
         nav.addEventListener("mouseout", function(){
-            subMenu.forEach(sub => {
-                sub.style.display = "none";
-            });
-            header.classList.remove("on");
+            this.querySelector(".subMenu").style.height = "0";
             this.querySelector("a").classList.remove("on");
         });
     });
