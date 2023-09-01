@@ -18,7 +18,6 @@ li{
 dark : #1d5b20
 light : #f8f7ce
 main : #669934
-
 */
 
 
@@ -89,8 +88,10 @@ main : #669934
     display: block;
     padding: 10px;
     color: #1d5b20;
-    background-color: #f8f7ce;
+    font-weight: 500;
+    background-color: #eaeeca;
 }
+
 .nav > ul > li > a:hover{
     background-color: #1d5b20;
     color: #fff;

@@ -66,12 +66,14 @@ window.onload = function(){
                 sub.style.display = "block";
             });
             header.classList.add("on");
+            this.querySelector("a").classList.add("on");
         });
         nav.addEventListener("mouseout", function(){
             subMenu.forEach(sub => {
                 sub.style.display = "none";
             });
             header.classList.remove("on");
+            this.querySelector("a").classList.remove("on");
         });
     });
 }
